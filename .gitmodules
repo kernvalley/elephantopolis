@@ -1,0 +1,3 @@
+[submodule "img/logos"]
+	path = img/logos
+	url = https://github.com/shgysk8zer0/logos.git

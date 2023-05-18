@@ -1,0 +1,24 @@
+.site-title {
+	font-family: 'Grandstander', cursive;
+}
+
+.center {
+	text-align: center;
+}
+
+.block {
+	display: block;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.btn.share {
+	bottom: 0.8em;
+	right: 0.8em;
+}
+
+.btn.share:disabled {
+	display: none;
+}
