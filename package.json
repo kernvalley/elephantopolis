@@ -7,7 +7,6 @@
     "test": "npm run lint",
     "start": "npm run netlify",
     "preinstall": "npm run git:submodules",
-    "postinstall": "npm run build",
     "preversion": "npm test",
     "create:lock": "npm i --package-lock-only --ignore-scripts",
     "git:fetch": "git fetch --prune --tags",
