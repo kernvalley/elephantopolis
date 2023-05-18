@@ -52,6 +52,7 @@
     "stylelint": "^15.6.2"
   },
   "dependencies": {
-    "netlify-cli": "^15.1.1"
+    "netlify-cli": "^15.1.1",
+    "svg-sprite-generator": "^0.0.7"
   }
 }
