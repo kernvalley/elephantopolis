@@ -1,18 +1,28 @@
 <form id="contact" netlify="">
-	<div>
-		<label for="contact-name" class="block">Name</label>
-		<input type="text" id="contact-name" autocomplete="name" placeholder="Full Name" required="" />
-	</div>
-	<div>
-		<label for="contact-email" class="block">Email</label>
-		<input type="email" id="contact-email" placeholder="user@example.com" autocomplete="email" required="" />
-	</div>
-	<div>
-		<label for="contact-subject" class="block">Subject</label>
-		<input type="text" id="contact-subject" placeholder="Subject" autocomplete="off" required="" />
-	</div>
-	<div>
-		<label for="contact-body" class="block">Message</label>
-		<textarea id="contact-body" name="body" placeholder="Enter your message" required=""></textarea>
+	<fieldset class="no-border">
+		<legend>Contact {{ site.data.org.name }}</legend>
+		<div>
+			<label for="contact-name" class="block required">Name</label>
+			<input type="text" name="name" id="contact-name" class="input" autocomplete="name" placeholder="Full Name" required="" />
+		</div>
+		<div>
+			<label for="contact-email" class="block required">Email</label>
+			<input type="email" name="email" id="contact-email" class="input" placeholder="user@example.com" autocomplete="email" required="" />
+		</div>
+		<div>
+			<label for="contact-phone" class="block">Phone</label>
+			<input type="tel" name="phone" id="contact-phone" class="input" placeholder="555-555-5555" autocomplete="tel" required="" />
+		</div>
+		<div>
+			<label for="contact-subject" class="block required">Subject</label>
+			<input type="text" name="subject" id="contact-subject" class="input" placeholder="Subject" autocomplete="off" required="" />
+		</div>
+		<div>
+			<label for="contact-body" class="block required">Message</label>
+			<textarea id="contact-body" name="body" name="body" class="input" placeholder="Enter your message" required=""></textarea>
+		</div>
+	</fieldset>
+	<div class="center">
+		<button type="submit" class="btn btn-accept">Send</button>
 	</div>
 </form>

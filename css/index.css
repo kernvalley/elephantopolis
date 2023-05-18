@@ -1,3 +1,26 @@
+:root {
+	--background: #1c1b22;
+	--color: #fbfbfe;
+	font-size: 1.7vw;
+	font-size: clamp(18px, 1.7vw , 24px);
+	font-family: system-ui, sans;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--color);
+	margin: 0;
+}
+
+#header {
+	padding: 0.8rem;
+}
+
 .site-title {
 	font-family: 'Grandstander', cursive;
 }
@@ -10,8 +33,26 @@
 	display: block;
 }
 
+.no-border {
+	border: none;
+}
+
 .fixed {
 	position: fixed;
+}
+
+.btn {
+	padding: 0.4rem;
+	font-size: 1.03rem;
+	appearance: button;
+	cursor: pointer;
+}
+
+.btn.btn-accept, .btn.btn-primary {
+	background-color: #4688f4;
+	color: #fafafa;
+	border-radius: 4px;
+	border: 1px solid currentColor;
 }
 
 .btn.share {
@@ -21,4 +62,25 @@
 
 .btn.share:disabled {
 	display: none;
+}
+
+#contact {
+	width: 800px;
+	max-width: 95%;
+	padding: 0.8rem;
+	margin: 0 auto;
+}
+
+#contact .input {
+	width: 100%;
+	font-size: 1.05rem;
+	padding: 0.3rem;
+	margin: 0.3rem;
+	resize: vertical;
+}
+
+.required::after {
+	display: inline;
+	content: " *";
+	font-size: 1.2rem;
 }
