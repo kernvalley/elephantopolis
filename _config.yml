@@ -1,0 +1,68 @@
+title: Elephantopolis
+url: https://www.elphantropolis.com
+markdown: kramdown
+version: 1.0.0
+timezone: America/Los_Angeles
+lang: en
+dir: ltr
+charset: utf-8
+paginate: 8
+paginate_path: "/blog/:num/"
+og-type: website
+description: "Map, events, and news app for Whiskey Flat Days"
+defaults:
+- scope:
+    path: _posts
+  values:
+    layout: post
+    permalink: /blog/:categories/:year/:month/:day/:title
+    index: true
+- scope:
+    path: _drafts
+  values:
+    layout: post
+    permalink: /blog/:categories/:year/:month/:day/:title
+plugins:
+  - jekyll-admin
+  - jekyll-watch
+  - jekyll-paginate
+include:
+  # Folders with dotfiles are ignored by default.
+  - .well-known
+  - _headers
+  - _redirects
+  - img/
+  - img/*
+exclude:
+  - CHANGELOG.md
+  - netlify.toml
+  - ".gitkeep"
+  - "*.rb"
+  - "*.gemspec"
+  - "*.php"
+  - "*.sh"
+  - "*.csv"
+  - "*.sfd"
+  - "*.ai"
+  - "*.psd"
+  - "*.sketch"
+  - "*.yml"
+  - "*.lock"
+  - "*.log"
+  - "tags.*"
+  - "*.config.js"
+  - docs/
+  - "/*-theme.xml"
+  - "/.github/"
+  - Gemfile
+  - node_modules/
+  - palette.xml
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - "/img/octicons/*.md"
+  - "/img/octicons/LICENSE"
+  - "/img/octicons/script"
+  - "/img/adwaita-icons/docs"
+  - "/img/adwaita-icons/LICENSE"

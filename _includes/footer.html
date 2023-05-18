@@ -1,0 +1,15 @@
+<footer id="footer">
+	<div class="social">
+		{% if site.data.social.facebook %}
+			<a href="{{ site.data.social.facebook }}" rel="noopener noreferrer" aria-label="Facebook">
+				<img src="/img/logos/facebook.svg" role="presentation" width="64" height="64" alt="" loading="lazy" />
+			</a>
+		{% endif %}
+		{% if site.data.social.instagram %}
+			<a href="{{ site.data.social.instagram }}" rel="noopener noreferrer">
+				<img src="/img/logos/instagram.svg" role="presentation" width="64" height="64" alt="" loading="lazy" />
+			</a>
+		{% endif %}
+	</div>
+	<div>&copy; 2023 {{ site.data.org.name }}</div>
+</footer>

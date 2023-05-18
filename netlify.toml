@@ -1,0 +1,14 @@
+# https://www.netlify.com/docs/netlify-toml-reference/
+[build]
+  base = "./"
+  publish = "./_site"
+  command = "npm run build:site && npm run build"
+  functions = "api"
+[dev]
+  base = "./"
+  publish = "./_site"
+  command = "npm run serve:dev"
+  targetPort = 4000
+  functions="api"
+[functions]
+  included_files = ["_data/*.yml"]

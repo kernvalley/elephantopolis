@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="color-scheme" content="light dark" />
+		<meta itemprop="description" content=" {{ page.description }}" />
+		<title>{{ page.title }}</title>
+		<base href="/" />
+		<link rel="stylesheet" href="/css/index.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet">
+		<link rel="icon" href="/img/logo.svg" sizes="any" type="image/svg+xml" />
+		<script src="/js/index.js" defer=""></script>
+	</head>
+	<body>
+		{% include header.html %}
+		<main id="main">{{ content }}</main>
+		{% include footer.html %}
+		<button type="button" class="btn round fixed share" disabled="">Share This</button>
+	</body>
+</html>
